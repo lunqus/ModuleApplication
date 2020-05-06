@@ -9,11 +9,13 @@ public class CourseServer {
 
         List<Course> courseList = new ArrayList<>();
 
-        Course course = new Course();
 
         for (int i = 0; i < 10; i++) {
-            course.setCourseName("Course Nr. " + i);
-            course.setCourseAuthor("Author Nr. " + i);
+
+            Course course = new Course();
+
+            course.setCourseName("Nr. 000" + i);
+            course.setCourseAuthor("Author #" + i);
 
             courseList.add(course);
         }
